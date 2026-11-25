@@ -1,3 +1,16 @@
+This licence covers the code and configuration in this repository: the
+stylesheets, the Lua filter, _brand.yml, _extension.yml and the README.
+
+It does NOT cover:
+- the logo files in _extensions/tufte-brand/logo/ (frog logo, favicons,
+  tadpole): Copyright (c) 2026 Anas A Rana. All rights reserved. They may not
+  be used, copied or modified outside Anas A Rana's own sites without
+  permission (see logo/NOTICE);
+- the fonts in _extensions/tufte-brand/fonts/, which keep their own licences
+  (ET Book: MIT; IBM Plex Mono: SIL Open Font License 1.1).
+
+---
+
 MIT License
 
 Copyright (c) 2026 Anas A Rana

@@ -41,4 +41,4 @@ Favicons are not added automatically; each site links them itself (for example w
 
 ## Licence
 
-The stylesheets, filter, `_brand.yml` and logo are under the MIT licence (see `LICENSE`). The fonts keep their own licences, included alongside them: ET Book under MIT (`fonts/et-book/LICENSE`) and IBM Plex Mono under the SIL Open Font License 1.1 (`fonts/ibm-plex-mono/LICENSE`).
+The stylesheets, filter and `_brand.yml` are under the MIT licence (see `LICENSE`). The logo files in `logo/` (frog logo, favicons, tadpole) are not: they are © Anas A Rana, all rights reserved, and are not for reuse without permission. If you reuse this extension, replace the logo with your own. The fonts keep their own licences, included alongside them: ET Book under MIT (`fonts/et-book/LICENSE`) and IBM Plex Mono under the SIL Open Font License 1.1 (`fonts/ibm-plex-mono/LICENSE`).
