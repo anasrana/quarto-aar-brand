@@ -8,7 +8,7 @@ The shared look of Anas A Rana's sites: ET Book text, IBM Plex Mono code, the Tu
 quarto add anasrana/quarto-aar-brand
 ```
 
-This copies the extension into `_extensions/tufte-brand/`; commit that folder. Update later with `quarto update anasrana/quarto-aar-brand`. Needs Quarto 1.11 or later.
+This copies the extension into `_extensions/anasrana/tufte-brand/`; commit that folder. Update later with `quarto update anasrana/quarto-aar-brand`. Needs Quarto 1.11 or later.
 
 ## Use
 
