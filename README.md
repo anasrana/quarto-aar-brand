@@ -34,7 +34,7 @@ In a project stylesheet, start with `/*-- scss:rules --*/` and use the `$tufte-*
 | `tufte.scss` | Tufte typography: headings, small caps, margin notes, tables, code panels, syntax colours, footer |
 | `tufte-dark.scss` | Dark palette; inverts SVG figures (opt out with `.no-invert`) |
 | `tufte.lua` | Acronyms in small caps, tadpole end mark (`endmark: false` to turn off), `***` section break, hanging quotes, code language labels, compact profile header when `person` metadata exists |
-| `fonts/` | ET Book (MIT) and IBM Plex Mono (OFL), with licences |
+| `fonts/` | ET Book (MIT) and IBM Plex Mono (OFL), with licences: `.woff2` for the web, plus `.otf`/`.ttf` desktop files for R plots and PDF (see each folder's README) |
 | `logo/` | Frog logo, favicons, tadpole |
 
 Favicons are not added automatically; each site links them itself (for example with `book: favicon:` or an `include-in-header` file).
@@ -42,3 +42,15 @@ Favicons are not added automatically; each site links them itself (for example w
 ## Licence
 
 The stylesheets, filter and `_brand.yml` are under the MIT licence (see `LICENSE`). The logo files in `logo/` (frog logo, favicons, tadpole) are not: they are © Anas A Rana, all rights reserved, and are not for reuse without permission. If you reuse this extension, replace the logo with your own. The fonts keep their own licences, included alongside them: ET Book under MIT (`fonts/et-book/LICENSE`) and IBM Plex Mono under the SIL Open Font License 1.1 (`fonts/ibm-plex-mono/LICENSE`).
+
+## Fonts in R plots and PDF
+
+Register the desktop files before plotting with a font-aware device such as `ragg`:
+
+```r
+f <- "_extensions/anasrana/tufte-brand/fonts/"
+systemfonts::register_font("ET Book",
+  plain  = paste0(f, "et-book/et-book-roman.otf"),
+  italic = paste0(f, "et-book/et-book-italic.otf"),
+  bold   = paste0(f, "et-book/et-book-bold.otf"))
+```
