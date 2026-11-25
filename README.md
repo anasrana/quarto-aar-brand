@@ -38,3 +38,7 @@ In a project stylesheet, start with `/*-- scss:rules --*/` and use the `$tufte-*
 | `logo/` | Frog logo, favicons, tadpole |
 
 Favicons are not added automatically; each site links them itself (for example with `book: favicon:` or an `include-in-header` file).
+
+## Licence
+
+The stylesheets, filter, `_brand.yml` and logo are under the MIT licence (see `LICENSE`). The fonts keep their own licences, included alongside them: ET Book under MIT (`fonts/et-book/LICENSE`) and IBM Plex Mono under the SIL Open Font License 1.1 (`fonts/ibm-plex-mono/LICENSE`).
