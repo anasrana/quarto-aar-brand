@@ -30,7 +30,8 @@ In a project stylesheet, start with `/*-- scss:rules --*/` and use the `$tufte-*
 
 | File | Purpose |
 |---|---|
-| `_brand.yml` | Colours (light and `*-dark`) and fonts |
+| `_brand.yml` | Colours (light and `*-dark`) and font families |
+| `fonts.css` | `@font-face` rules for the web fonts (a plain stylesheet, so Quarto copies it and the font files into the site) |
 | `tufte.scss` | Tufte typography: headings, small caps, margin notes, tables, code panels, syntax colours, footer |
 | `tufte-dark.scss` | Dark palette; inverts SVG figures (opt out with `.no-invert`) |
 | `tufte.lua` | Acronyms in small caps, tadpole end mark (`endmark: false` to turn off), `***` section break, hanging quotes, code language labels, compact profile header when `person` metadata exists |
